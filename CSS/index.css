@@ -1,0 +1,427 @@
+:root {
+  --main-color: #16aeca;
+}
+/* public start  */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+}
+/* public end  */
+/* nav start */
+nav.navbar {
+  z-index: 15;
+}
+nav.navbar .navbar-brand img {
+  width: 80%;
+}
+nav.navbar .navbar-nav .nav-item a.nav-link {
+  font-size: 16px;
+  color: #e8e8e8;
+  line-height: 40px;
+  padding: 0 16px;
+  transition: all 0.5s ease;
+}
+nav.navbar .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar .navbar-nav .nav-item a.nav-link.active {
+  background-color: #e8e8e8;
+  color: var(--main-color);
+}
+nav.navbar.noTransparent {
+  background-color: #fff;
+  border: 1px solid #eee;
+  transition: all 0.5s ease;
+}
+nav.navbar.noTransparent .nav-item a.nav-link {
+  color: var(--main-color);
+}
+nav.navbar.noTransparent .navbar-nav .nav-item a.nav-link:hover,
+nav.navbar.noTransparent .navbar-nav .nav-item a.nav-link.active {
+  color: #dae413;
+  background-color: var(--main-color);
+}
+nav.navbar.noTransparent button.navbar-toggler {
+  color: var(--main-color);
+}
+/* nav end */
+/* header start  */
+header {
+  background-image: url(../imgs/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header .overlay {
+  background: linear-gradient(
+    to right,
+    rgba(46, 178, 181, 0.8),
+    rgba(197, 203, 50, 0.8)
+  );
+  min-height: 100vh;
+}
+header .overlay .carousel .carousel-item {
+  min-height: 100vh;
+  position: relative;
+}
+header .overlay .carousel .carousel-item .carousel-content {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  left: 15%;
+  text-align: center;
+  z-index: 10;
+}
+header .overlay .carousel .carousel-item .carousel-content h2 {
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 60px;
+  color: #fff;
+}
+header .overlay .carousel .carousel-item .carousel-content a {
+  padding: 13px 47px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+header .overlay .carousel .carousel-item .carousel-content a:hover {
+  background-color: #dae413;
+  color: #555;
+}
+/* header end  */
+/* main start */
+/* ............ features start  */
+section.features {
+  min-height: 700px;
+  padding-top: 80px;
+}
+.section-title h3 {
+  font-size: 40px;
+  color: #070c0c;
+  line-height: 22px;
+  margin-bottom: 60px;
+}
+section.features .card {
+  height: 330px;
+  margin-bottom: 20px;
+  transition: all 1s ease;
+}
+section.features .card .card-img {
+  padding: 35px 30px;
+}
+section.features .card h3 {
+  font-size: 24px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  color: #070c0c;
+}
+section.features .card p {
+  padding: 0 40px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #919191;
+  opacity: 0;
+}
+section.features .card:hover {
+  cursor: pointer;
+  height: 400px;
+}
+section.features .card:hover p {
+  opacity: 1;
+  transition: all 1.2s ease;
+}
+/* ............ features end  */
+/* ............ gallery start  */
+section.gallery .gallery-link img {
+  width: 100%;
+}
+section.gallery .gallery-work .gall {
+  position: relative;
+}
+section.gallery .gallery-work .gall:hover .gallery-hover {
+  opacity: 1;
+}
+section.gallery .gallery-work .gall .gallery-hover {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  right: 5%;
+  text-align: center;
+  background-color: rgb(22, 173, 201, 0.9);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+section.gallery .gallery-work .gall .gallery-hover i {
+  margin-top: 50%;
+  font-size: 36px;
+  line-height: 26px;
+}
+section.gallery .gallery-link img {
+  width: 100%;
+}
+section.gallery .gallery-work .gall {
+  position: relative;
+}
+section.gallery .gallery-work .gall:hover .gallery-hover {
+  opacity: 1;
+}
+section.gallery .gallery-work .gall .gallery-hover {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  right: 5%;
+  text-align: center;
+  background-color: rgb(22, 173, 201, 0.9);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+section.gallery .gallery-work .gall .gallery-hover i {
+  margin-top: 50%;
+  font-size: 36px;
+  line-height: 26px;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-header i {
+  color: var(--main-color);
+  margin-right: 100%;
+}
+.modal-content {
+  background-color: transparent;
+}
+.modal-body img {
+  width: 100%;
+}
+.modal-body h1 {
+  color: var(--main-color);
+  font-size: 36px;
+  line-height: 52px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.modal-body a {
+  color: #555;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.modal-body hr {
+  color: white;
+  padding: 1px;
+}
+.modal-body p {
+  color: #919191;
+  font-size: 15px;
+  line-height: 34px;
+}
+.modal-body .btn {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 25px;
+  font-size: 20px;
+}
+.modal-body .btn:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+/* !edit the links under the title in the modal and make them ul inline list like bootstrap */
+/* ............ gallery end  */
+/* ............ statistics start */
+section.statistics {
+  background-image: url(../imgs/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ddfaff;
+}
+section.statistics .statistics-overlay {
+  background-color: rgba(22, 173, 201, 0.88);
+  padding: 140px 0 100px;
+}
+section.statistics img {
+  margin-bottom: 45px;
+}
+section.statistics .details h1 {
+  font-size: 40px;
+  line-height: 22px;
+}
+section.statistics .details p {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #85ecff;
+}
+/* ............ statistics end  */
+/* ............ contact start  */
+section.contact {
+  padding: 100px 0 60px;
+}
+section.contact .row {
+  text-align: start;
+}
+section.contact .map {
+  margin-bottom: 70px;
+  margin-left: 0;
+  text-align: start;
+}
+section.contact .map iframe {
+  width: 90%;
+}
+section.contact ul {
+  list-style-type: none;
+  color: var(--main-color);
+  padding: 0;
+}
+section.contact h2 {
+  font-size: 24px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+section.contact input,
+section.contact textarea {
+  background-color: #f7f7f7;
+  border: 1px solid #ebebeb;
+  width: 100%;
+}
+section.contact form button {
+  background-color: var(--main-color);
+  border: none;
+  margin-left: 100%;
+  font-size: 15px;
+  line-height: 11px;
+  padding: 15px 30px;
+}
+section.contact .invalid-feedback {
+  font-size: 10px;
+  text-align: start;
+}
+/* ............ contact end  */
+/* ............ about start  */
+section.about {
+  padding: 80px 0;
+  background-color: #171717;
+  color: #919191;
+}
+section.about h4 {
+  color: #85ecff;
+  font-size: 18px;
+  line-height: 44px;
+}
+section.about h4 + div {
+  background: #5c5c5c;
+  width: 30px;
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+section.about .company p {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 22px;
+}
+section.about .social-media li a.btn {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #333333;
+  color: #acacac;
+  font-size: 14px;
+  line-height: 24px;
+  transition: all 0.5s ease;
+}
+section.about .social-media li a i {
+  margin-top: 10px;
+}
+section.about .social-media li a.btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+section.about .call ul {
+  list-style-type: none;
+  padding: 0%;
+}
+section.about .call ul li {
+  margin-bottom: 25px;
+  padding: 0%;
+}
+section.about .call li a.btn {
+  padding: 0%;
+}
+section.about .call li a.btn p {
+  color: #626262;
+}
+section.about .call li a.btn i {
+  padding: 3px 0 0;
+  width: 30px;
+  height: 30px;
+  background-color: #333333;
+  color: #acacac;
+  font-size: 18px;
+  line-height: 24px;
+  transition: all 0.5s ease;
+  border-radius: 3px;
+}
+section.about .call li a.btn:hover i {
+  background-color: var(--main-color);
+  color: #fff;
+}
+section.about .call li a.btn:hover p {
+  color: var(--main-color);
+  transition: all 0.5s ease;
+}
+/* ............ about end  */
+/* main end */
+/* footer start  */
+footer {
+  background-color: #111111;
+  color: #919191;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+footer p {
+  margin: 0%;
+}
+/* footer end  */
+/* media start */
+@media (max-width: 992px) {
+  section.features .card:hover {
+    height: 420px;
+  }
+}
+@media (max-width: 768px) {
+  section.features .card:hover {
+    height: 330px;
+  }
+  section.features .card p {
+    opacity: 1;
+  }
+}
+@media (max-width: 576px) {
+  section.contact .row {
+    text-align: center;
+  }
+  section.contact .map {
+    text-align: center;
+  }
+  section.about {
+    text-align: center;
+  }
+  section.about h4 + div {
+    height: 0%;
+  }
+  section.about .call ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* media end */

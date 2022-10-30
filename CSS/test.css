@@ -1,0 +1,59 @@
+:root {
+  --main-color: #16aeca;
+}
+section.gallery .gallery-link img {
+  width: 100%;
+}
+section.gallery .gallery-work .gall {
+  position: relative;
+}
+section.gallery .gallery-work .gall:hover .gallery-hover {
+  opacity: 1;
+}
+section.gallery .gallery-work .gall .gallery-hover {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  right: 5%;
+  text-align: center;
+  background-color: rgb(22, 173, 201, 0.9);
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+section.gallery .gallery-work .gall .gallery-hover i {
+  margin-top: 50%;
+  font-size: 36px;
+  line-height: 26px;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-content {
+  background-color: transparent;
+}
+.modal-body img {
+  width: 100%;
+}
+.modal-body h1 {
+  color: var(--main-color);
+}
+.modal-body a {
+  color: #9191914b;
+}
+.modal-body hr {
+  color: white;
+  padding: 1px;
+}
+.modal-body p {
+  color: #919191;
+}
+.modal-body .btn {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 25px;
+}
