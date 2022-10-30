@@ -9,6 +9,9 @@
 }
 /* public end  */
 /* nav start */
+body {
+  overflow-x: hidden;
+}
 nav.navbar {
   z-index: 15;
 }
