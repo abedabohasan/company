@@ -246,6 +246,9 @@ section.statistics .statistics-overlay {
   background-color: rgba(22, 173, 201, 0.88);
   padding: 140px 0 100px;
 }
+section.statistics .phone-icon {
+  margin-right: -10px;
+}
 section.statistics img {
   margin-bottom: 45px;
 }
