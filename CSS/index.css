@@ -9,11 +9,8 @@
 }
 /* public end  */
 /* nav start */
-body {
-  overflow-x: hidden;
-}
 nav.navbar {
-  z-index: 15;
+  max-width: 100%;
 }
 nav.navbar .navbar-brand img {
   width: 80%;
@@ -348,10 +345,12 @@ section.about .social-media li a.btn:hover {
   color: #fff;
 }
 section.about .call ul {
+  text-align: start;
   list-style-type: none;
   padding: 0%;
 }
 section.about .call ul li {
+  width: 100%;
   margin-bottom: 25px;
   padding: 0%;
 }
